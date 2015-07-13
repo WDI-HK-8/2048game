@@ -1,0 +1,29 @@
+.grid {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 6px solid #BBADA0;
+	border-radius: 10px;
+}
+
+.grid-box {
+	border: 6px solid #BBADA0;
+	background: #CCC0B3;
+	width: 25%;
+	padding-top: 4.5%;
+	padding-bottom: 4.5%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+body {
+    font-size:20px;
+    font-family: 'Open Sans Condensed',verdana, sans-serif;
+    text-align:center;
+    background:#ECECEC;
+}
+
