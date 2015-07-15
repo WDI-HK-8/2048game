@@ -21,14 +21,14 @@
     <link href="css/custom8x8.css" rel="stylesheet">
 
   </head>
-    <body>
-    <div class="container col-xs-offset-4 col-xs-4">
+  <body>
+    <div class="container header">
       <div class="heading">
-        <div class="col-xs-6">
+        <div class="mainTitle col-xs-6">
           <h1 class="title">2048</h1>
           <p class="game-intro">Join the numbers and get as high a score as possible!</strong></p>
         </div>
-        <div class="score_newgame col-xs-offset-2 col-xs-4">
+        <div class="score_newgame col-xs-6">
           <div class="score-container">
             <div class="score-title">SCORE</div>
             <div id="totalscore"></div>
@@ -38,90 +38,88 @@
       </div>
     </div>
 
-    <div class="wrapper">
-      <section class ="container col-xs-offset-2 col-xs-8 grid">
-        <div class = "row" id="grid_1">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_2">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_3">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_4">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_5">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_6">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_7">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>
-        <div class = "row" id="grid_8">
-          <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-          <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
-        </div>  
-      </section>
-    </div>
+    <section class ="container-fluid grid">
+      <div class = "row" id="grid_1">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_2">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_3">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_4">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_5">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_6">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_7">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>
+      <div class = "row" id="grid_8">
+        <div id="column1" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column2" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column3" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column4" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column5" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column6" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column7" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+        <div id="column8" class="grid-box col-xs-2" myAttr='canMove' combine='canCombine'>0</div>
+      </div>  
+    </section>
 
     <section class="container col-xs-offset-4 col-xs-4">
       <a href="index.html" class="col-xs-4">4x4 Grid</a>

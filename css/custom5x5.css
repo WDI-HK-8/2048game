@@ -7,12 +7,18 @@ body {
 }
 
 .grid {
-	margin-left: 420px;
+	overflow: hidden;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 8px solid #BBADA0;
 	border-radius: 10px;
 	background-color: #CCC0B3;
+	padding: 0;
+	width: 580px;
 }
 
 .grid-box {
@@ -20,14 +26,20 @@ body {
 	background: #CCC0B3;
 	width: 20%;
 	color: #776e65;
-	padding-top: 3%;
-	padding-bottom: 3%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
 	padding-left: 0;
 	padding-right: 0;
 	position: relative;
+	@include border-radius($tile-radius);
+  	@include transition($transition-time ease-in-out);
+  	-webkit-transition-property: -webkit-transform;
+  	-moz-transition-property: -moz-transform;
+  	transition-property: transform;
+  	z-index: 2;
 }
 
 h1 {
@@ -38,7 +50,15 @@ h1 {
 	margin-top: 20px;
 }
 
+.score-newgame {
+	display: inline-block;
+}
+
 .score-container {
+	float: none;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	font-weight: bold;
 	background-color: #BBADA0;
@@ -54,6 +74,9 @@ h1 {
 }
 
 .btn-default {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
 	background-color: brown;
 	font-weight: bold;
@@ -71,4 +94,10 @@ a {
 a:hover {
 	color: black;
 	text-decoration: none;
+}
+
+.header {
+	width: 580px;
+	margin-left: auto;
+	margin-right: auto;
 }
