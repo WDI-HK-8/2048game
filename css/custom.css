@@ -1,25 +1,67 @@
 .grid {
+	overflow: hidden;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 8px solid #BBADA0;
 	border-radius: 10px;
 	background-color: #CCC0B3;
-	width: 450px;
+	padding: 0;
+}
+
+#grid4 {
+	width: 464px;
+}
+
+#grid5 {
+	width: 580px;
+}
+
+#grid6 {
+	width: 696px;
+}
+
+#grid8 {
+	width: 928px;
 }
 
 .grid-box {
+	margin: 0;
 	border: 8px solid #BBADA0;
 	background: #CCC0B3;
-	width: 25%;
 	color: #776e65;
-	padding-top: 3%;
-	padding-bottom: 3%;
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
 	padding-left: 0;
 	padding-right: 0;
-	position: relative;
+}
+
+#grid4 .grid-box {
+	width: 25%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#grid5 .grid-box {
+	width: 20%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+#grid6 .grid-box {
+	width: (100/6)%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#grid8 .grid-box {
+	width: 12.5%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 }
 
 h1 {
@@ -37,7 +79,15 @@ body {
 	margin-top: 20px;
 }
 
+.score-newgame {
+	display: inline-block;
+}
+
 .score-container {
+	float: none;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	font-weight: bold;
 	background-color: #BBADA0;
@@ -53,21 +103,47 @@ body {
 }
 
 .btn-default {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
 	background-color: brown;
 	font-weight: bold;
 }
 
-a {
+.btn-danger {
 	font-weight: bold;
 	font-size: 20px;
-	text-decoration: none;
 	color: #EEE4DA;
 	background-color: #BBADA0;
-	border-radius: 5px;
+	border: none;
 }
 
-a:hover {
+.header {
+	width: 464px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	margin-top: 20px;
+	width: 580px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	float: none;
+}
+
+.message {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 10px;
+	opacity: 0.7;
+	padding: 0;
+	text-align: center;
 	color: black;
-	text-decoration: none;
+	font-weight: bold;
+	display: block;
 }
