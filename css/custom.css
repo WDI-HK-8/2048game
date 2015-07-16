@@ -1,4 +1,4 @@
-#fourgrid {
+.grid {
 	overflow: hidden;
 	float: none;
 	display: block;
@@ -10,118 +10,58 @@
 	border-radius: 10px;
 	background-color: #CCC0B3;
 	padding: 0;
+}
+
+#grid4 {
 	width: 464px;
 }
 
-#fivegrid {
-	overflow: hidden;
-	float: none;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 8px solid #BBADA0;
-	border-radius: 10px;
-	background-color: #CCC0B3;
-	padding: 0;
+#grid5 {
 	width: 580px;
 }
 
-#sixgrid {
-	overflow: hidden;
-	float: none;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 8px solid #BBADA0;
-	border-radius: 10px;
-	background-color: #CCC0B3;
-	padding: 0;
+#grid6 {
 	width: 696px;
 }
 
-#fourgrid .grid-box {
-	margin: 0;
-	border: 8px solid #BBADA0;
-	background: #CCC0B3;
-	width: 25%;
-	color: #776e65;
-	padding-top: 3%;
-	padding-bottom: 3%;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#fivegrid .grid-box {
-	border: 8px solid #BBADA0;
-	background: #CCC0B3;
-	width: 20%;
-	color: #776e65;
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
-	padding-left: 0;
-	padding-right: 0;
-	position: relative;
-	@include border-radius($tile-radius);
-  	@include transition($transition-time ease-in-out);
-  	-webkit-transition-property: -webkit-transform;
-  	-moz-transition-property: -moz-transform;
-  	transition-property: transform;
-  	z-index: 2;
-}
-
-#sixgrid .grid-box {
-	margin: 0;
-	border: 8px solid #BBADA0;
-	background: #CCC0B3;
-	width: (100/6)%;
-	color: #776e65;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#eightgrid {
-	overflow: hidden;
-	float: none;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 8px solid #BBADA0;
-	border-radius: 10px;
-	background-color: #CCC0B3;
-	padding: 0;
+#grid8 {
 	width: 928px;
 }
 
-#eightgrid .grid-box {
+.grid-box {
 	margin: 0;
 	border: 8px solid #BBADA0;
 	background: #CCC0B3;
-	width: 12.5%;
 	color: #776e65;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+#grid4 .grid-box {
+	width: 25%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#grid5 .grid-box {
+	width: 20%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+#grid6 .grid-box {
+	width: (100/6)%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#grid8 .grid-box {
+	width: 12.5%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 }
 
 h1 {
@@ -187,6 +127,12 @@ body {
 
 .footer {
 	margin-top: 20px;
+	width: 580px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	float: none;
 }
 
 .message {
@@ -199,4 +145,5 @@ body {
 	text-align: center;
 	color: black;
 	font-weight: bold;
+	display: block;
 }
