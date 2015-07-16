@@ -1,4 +1,4 @@
-.grid {
+#fourgrid {
 	overflow: hidden;
 	float: none;
 	display: block;
@@ -13,7 +13,37 @@
 	width: 464px;
 }
 
-.grid-box {
+#fivegrid {
+	overflow: hidden;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 8px solid #BBADA0;
+	border-radius: 10px;
+	background-color: #CCC0B3;
+	padding: 0;
+	width: 580px;
+}
+
+#sixgrid {
+	overflow: hidden;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 8px solid #BBADA0;
+	border-radius: 10px;
+	background-color: #CCC0B3;
+	padding: 0;
+	width: 696px;
+}
+
+#fourgrid .grid-box {
 	margin: 0;
 	border: 8px solid #BBADA0;
 	background: #CCC0B3;
@@ -21,6 +51,72 @@
 	color: #776e65;
 	padding-top: 3%;
 	padding-bottom: 3%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#fivegrid .grid-box {
+	border: 8px solid #BBADA0;
+	background: #CCC0B3;
+	width: 20%;
+	color: #776e65;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	@include border-radius($tile-radius);
+  	@include transition($transition-time ease-in-out);
+  	-webkit-transition-property: -webkit-transform;
+  	-moz-transition-property: -moz-transform;
+  	transition-property: transform;
+  	z-index: 2;
+}
+
+#sixgrid .grid-box {
+	margin: 0;
+	border: 8px solid #BBADA0;
+	background: #CCC0B3;
+	width: (100/6)%;
+	color: #776e65;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#eightgrid {
+	overflow: hidden;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 8px solid #BBADA0;
+	border-radius: 10px;
+	background-color: #CCC0B3;
+	padding: 0;
+	width: 928px;
+}
+
+#eightgrid .grid-box {
+	margin: 0;
+	border: 8px solid #BBADA0;
+	background: #CCC0B3;
+	width: 12.5%;
+	color: #776e65;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
@@ -75,18 +171,12 @@ body {
 	font-weight: bold;
 }
 
-a {
+.btn-danger {
 	font-weight: bold;
 	font-size: 20px;
-	text-decoration: none;
 	color: #EEE4DA;
 	background-color: #BBADA0;
-	border-radius: 5px;
-}
-
-a:hover {
-	color: black;
-	text-decoration: none;
+	border: none;
 }
 
 .header {
@@ -95,3 +185,18 @@ a:hover {
 	margin-right: auto;
 }
 
+.footer {
+	margin-top: 20px;
+}
+
+.message {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 10px;
+	opacity: 0.7;
+	padding: 0;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}

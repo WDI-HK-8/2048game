@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  var toWin = 2048;
   var max = 4;
   var winState=null;
   var totalScore=0;
@@ -208,7 +209,274 @@ $(document).ready(function(){
     printScore();
     randomNumberGeneration();
     randomNumberGeneration();
-  })
+    $(".message").children("h1").remove();
+    $(".message").children("h2").remove();
+  });
+
+   $('#grid4').click(function(){
+    toWin=2048;
+    winState=null;
+    over=null
+    totalScore = 0;
+    max = 4;
+    $('.grid').remove();
+    $('.container-fluid').append('<div class="grid" id="fourgrid">\
+        <div class = "row" id="grid_1">\
+          <div id="column1" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+        <div class = "row" id="grid_2">\
+          <div id="column1" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          </div>\
+        <div class = "row" id="grid_3">\
+          <div id="column1" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+        <div class = "row" id="grid_4">\
+          <div id="column1" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-3" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+      </div>');
+    $(".title").text("2048");
+    $(".game-intro").text("Join the numbers and get to the <strong>2048 tile!</strong>");
+    $(".message").children("h1").remove();
+    $(".message").children("h2").remove();
+    printScore();
+    randomNumberGeneration();
+    randomNumberGeneration();
+  });
+
+  $('#grid5').click(function(){
+    toWin=65536;
+    winState=null;
+    over=null
+    totalScore = 0;
+    max = 5;
+    $('.grid').remove();
+    $('.container-fluid').append('<div class="grid" id="fivegrid">\
+        <div class = "row" id="grid_1">\
+          <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+        <div class = "row" id="grid_2">\
+          <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+        <div class = "row" id="grid_3">\
+          <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+        <div class = "row" id="grid_4">\
+          <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+        <div class = "row" id="grid_5">\
+          <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+          <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        </div>\
+      </div>');
+    $(".title").text("65536");
+    $(".game-intro").text("Join the numbers and get to the <strong>65536 tile!</strong>");
+    printScore();
+    $(".message").children("h1").remove();
+    $(".message").children("h2").remove();
+    randomNumberGeneration();
+    randomNumberGeneration();
+  });
+
+  $('#grid6').click(function(){
+    toWin=2048;
+    winState=null;
+    over=null
+    totalScore = 0;
+    max = 8;
+    $('.grid').remove();
+    $('.container-fluid').append('<div class="grid" id="sixgrid">\
+      <div class = "row" id="grid_1">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_2">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_3">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_4">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_5">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_6">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+     </div>');
+    $(".title").text("2048");
+    $(".game-intro").text("Join the numbers and get as high a score as possible!");
+    printScore();
+    $(".message").children("h1").remove();
+    $(".message").children("h2").remove();
+    randomNumberGeneration();
+    randomNumberGeneration();
+    randomNumberGeneration();
+    randomNumberGeneration();
+  });
+
+  $('#grid8').click(function(){
+    toWin=2048;
+    winState=null;
+    over=null
+    totalScore = 0;
+    max = 8;
+    $('.grid').remove();
+    $('.container-fluid').append('<div class="grid" id="eightgrid">\
+      <div class = "row" id="grid_1">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_2">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_3">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_4">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_5">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_6">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_7">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+      <div class = "row" id="grid_8">\
+        <div id="column1" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column2" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column3" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column4" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column5" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column6" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column7" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+        <div id="column8" class="grid-box col-xs-2" myAttr="canMove" combine="canCombine">0</div>\
+      </div>\
+     </div>');
+    $(".title").text("2048");
+    $(".game-intro").text("Join the numbers and get as high a score as possible!");
+    printScore();
+    $(".message").children("h1").remove();
+    $(".message").children("h2").remove();
+    randomNumberGeneration();
+    randomNumberGeneration();
+    randomNumberGeneration();
+    randomNumberGeneration();
+  });
+
+ 
 
   var leftMove = function(){
   	var hasMoved=false;
@@ -249,7 +517,7 @@ $(document).ready(function(){
   		}
   	}
   	reset();
-    if ((hasMoved==true)&&(winState==null)){randomNumberGeneration()};
+    if ((hasMoved==true)&&((winState==null)||(over==null))){randomNumberGeneration()};
     printScore();
   }
 
@@ -292,7 +560,7 @@ $(document).ready(function(){
       }
     }
     reset();
-    if ((hasMoved==true)&&(winState==null)){randomNumberGeneration()};
+    if ((hasMoved==true)&&((winState==null)||(over==null))){randomNumberGeneration()};
     printScore();
   }
 
@@ -335,7 +603,7 @@ $(document).ready(function(){
       }
     }
     reset();
-    if ((hasMoved==true)&&(winState==null)){randomNumberGeneration()};
+    if ((hasMoved==true)&&((winState==null)||(over==null))){randomNumberGeneration()};
     printScore();
   }
 
@@ -378,25 +646,64 @@ $(document).ready(function(){
       }
     }
     reset();
-    if ((hasMoved==true)&&(winState==null)){randomNumberGeneration()};
+    if ((hasMoved==true)&&((winState==null)||(over==null))) {
+      randomNumberGeneration()
+    };
     printScore();
   }
 
   var checkWin = function(){
-    for(i=1; i<=max; i++){
-      var GridRow="grid_"+i;
-      for (j=1; j<=max; j++){
-        var GridCol="column"+j;
-        if ($('#'+GridRow).children('#'+GridCol).text()=='2048'){
-            winState="win";
-            console.log("You win!")
-        }     
+    if (max<=5){
+      for(i=1; i<=max; i++){
+        var GridRow="grid_"+i;
+        for (j=1; j<=max; j++){
+          var GridCol="column"+j;
+          if ($('#'+GridRow).children('#'+GridCol).text()==toWin){
+              winState="win";
+              $(".message").append("<h1>You win!</h1>");
+          }     
+        }
       }
     }
   }
 
   var checkLose = function(){
-    if (winState!="win"){
+    if (max<=5){
+      if (winState!="win"){
+        var noZeroes=checkNoZeroes();
+        if (noZeroes==true){
+          var noSameValue=true;
+          for(i=1; i<=max; i++){
+            var GridRow="grid_"+i;
+            for (j=1; j<=(max-1); j++){
+              var GridCol="column"+j;
+              var GridColNext="column"+(j+1);
+              if ($('#'+GridRow).children('#'+GridCol).text()==$('#'+GridRow).children('#'+GridColNext).text()){
+                noSameValue=false;
+              }     
+            }
+          }
+          for(i=1; i<=max; i++){
+            var GridCol="column"+i;
+            for (j=1; j<=(max-1); j++){
+              var GridRow="grid_"+j;
+              var GridRowNext="grid_"+(j+1);
+              if ($('#'+GridRow).children('#'+GridCol).text()==$('#'+GridRowNext).children('#'+GridCol).text()){
+                noSameValue=false;
+              }     
+            }
+          }
+        }
+        if (noSameValue){
+          winState="lose";
+          $(".message").append("<h1>You lose!</h1>");
+        }
+      }
+    }  
+  }
+
+  var checkOver = function(){
+    if (max>=6){
       var noZeroes=checkNoZeroes();
       if (noZeroes==true){
         var noSameValue=true;
@@ -422,26 +729,26 @@ $(document).ready(function(){
         }
       }
       if (noSameValue){
-        winState="lose";
-        console.log("You lose!")
+        over="over";
+        $(".message").append("<h2>Game over! You got "+totalScore+" points! Good job!<h2>");
       }
-    }  
+    } 
   }
 
 	$("body").keydown(function(e) {
-	  if((e.keyCode == 37)&&(winState==null)) { // left
+	  if((e.keyCode == 37)&&((winState==null)||(over==null))) { // left
 	    leftMove();
       checkWin();
       checkLose();
-	  } else if((e.keyCode == 39)&&(winState==null)) {
+	  } else if((e.keyCode == 39)&&((winState==null)||(over==null))) {
       rightMove();
       checkWin();
       checkLose();
-    } else if((e.keyCode == 38)&&(winState==null)){
+    } else if((e.keyCode == 38)&&((winState==null)||(over==null))) {
       upMove();
       checkWin();
       checkLose();
-    } else if((e.keyCode == 40)&&(winState==null)){
+    } else if((e.keyCode == 40)&&((winState==null)||(over==null))) {
       downMove();
       checkWin();
       checkLose();
